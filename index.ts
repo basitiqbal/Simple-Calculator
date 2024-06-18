@@ -5,10 +5,10 @@ import inquirer from "inquirer";
 
 //async function promptUser() {
   const answer = await inquirer.prompt([
-    { message: "Enter first number:", type: "number", name: "firstNumber" },
-    { message: "Enter second number:", type: "number", name: "secondNumber" },
+    { message: "Enter 1st Number: ", type: "number", name: "firstNumber" },
+    { message: "Enter 2nd Number: ", type: "number", name: "secondNumber" },
     {
-      message: "select one of the operator u want to perfor action:",
+      message: "select one of the operator u want to perform action:-",
       type: "list",
       name: "operator",
       choices: ["Addition", "Subtration", "Multiplication", "Division"],
@@ -27,7 +27,7 @@ if(answer.operator === "Addition")
   }
   else if (answer.operator === "Subtration")
   {
-    console.log("The Subtraction is:",answer.firstNumber - answer.secondNumber)
+    console.log("The Subtraction is: ",answer.firstNumber - answer.secondNumber)
   }
   else if (answer.operator === "Multiplication")
   {
@@ -41,3 +41,4 @@ else
 {
   console.log("Please enter valid operator.")
 }
+console.log("=======THE END=======");
